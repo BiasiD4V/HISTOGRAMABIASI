@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: orquestra-biasi-histograma
+    env: docker
+    plan: starter
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-5.2
+      - key: OPENAI_REASONING_EFFORT
+        value: high
+      - key: USE_MOCK_AGENTS
+        value: false
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: HOSTED_MODE
+        value: true

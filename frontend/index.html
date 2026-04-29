@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Orquestra Biasi · Agentes Reais</title>
+<style>
+:root{--bg:#0b0d12;--panel:#131824;--panel2:#1b2233;--line:#2d3855;--line2:#3b4870;--gold:#ffc82d;--gold2:#f0b90d;--txt:#eef2ff;--muted:#9ca8ca;--muted2:#65708f;--ok:#22c55e;--warn:#f59e0b;--danger:#ef4444;--info:#60a5fa;--r:18px}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% -20%,#1a2540 0,#0b0d12 34%),var(--bg);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;font-size:14px}.top{height:68px;background:rgba(13,16,24,.94);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 22px;backdrop-filter:blur(8px);position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:13px}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--gold),#ffe28a);color:#0b0d12;display:grid;place-items:center;font-weight:950;box-shadow:0 10px 30px rgba(255,200,45,.18)}.brand b{font-size:18px;letter-spacing:.2px}.brand span{display:block;color:var(--gold);font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.status{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px}.dot{width:8px;height:8px;border-radius:99px;background:var(--muted2)}.dot.live{background:var(--ok);box-shadow:0 0 12px var(--ok)}.layout{display:grid;grid-template-columns:390px 1fr;min-height:calc(100vh - 68px)}aside{background:rgba(19,24,36,.96);border-right:1px solid var(--line);padding:18px;position:sticky;top:68px;height:calc(100vh - 68px);overflow:auto}.main{padding:24px;overflow:auto}.card{background:linear-gradient(180deg,rgba(27,34,51,.98),rgba(19,24,36,.98));border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:16px;box-shadow:0 12px 35px rgba(0,0,0,.16)}.card h2{margin:0;padding:15px 17px;border-bottom:1px solid var(--line);font-size:12px;text-transform:uppercase;letter-spacing:1.2px;color:var(--gold);display:flex;align-items:center;gap:8px}.body{padding:17px}label{display:block;margin:13px 0 7px;font-size:11px;font-weight:850;letter-spacing:.75px;color:var(--muted);text-transform:uppercase}input,textarea,select{width:100%;background:#111727;border:1px solid var(--line2);border-radius:13px;color:var(--txt);padding:12px 13px;outline:none}textarea{min-height:118px;resize:vertical;line-height:1.55}input:focus,textarea:focus,select:focus{border-color:var(--gold)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}.hint{font-size:12px;color:var(--muted);line-height:1.65}.drop input{padding:10px;background:#0f1422}.btn{width:100%;border:0;border-radius:14px;background:linear-gradient(135deg,var(--gold),#ffe077);color:#0b0d12;font-weight:950;text-transform:uppercase;letter-spacing:.9px;padding:15px 16px;margin-top:14px;cursor:pointer;box-shadow:0 12px 30px rgba(255,200,45,.18)}.btn:disabled{opacity:.55;cursor:not-allowed}.btn.secondary{background:transparent;color:var(--txt);border:1px solid var(--line2);box-shadow:none}.agents{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.agent{background:linear-gradient(180deg,#171d2d,#121827);border:1px solid var(--line);border-radius:18px;padding:15px;min-height:145px;position:relative}.agent.run{border-color:rgba(255,200,45,.8);box-shadow:0 0 0 3px rgba(255,200,45,.1)}.agent.done{border-color:rgba(34,197,94,.55)}.face{width:44px;height:44px;border-radius:16px;background:#1f2942;border:1px solid var(--line2);display:grid;place-items:center;font-size:21px;margin-bottom:10px}.agent h3{font-size:14px;margin:0 0 6px}.agent p{font-size:12px;color:var(--muted);line-height:1.45;margin:0}.badge{display:inline-flex;margin-top:10px;border-radius:99px;padding:4px 9px;font-size:11px;background:#222b42;color:var(--muted)}.run .badge{background:rgba(255,200,45,.15);color:var(--gold)}.done .badge{background:rgba(34,197,94,.15);color:var(--ok)}.hero{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:18px}.hero h1{margin:0;font-size:30px;letter-spacing:-.02em}.hero p{margin:6px 0 0;color:var(--muted)}.tools{display:flex;gap:10px;flex-wrap:wrap}.smallbtn{border:1px solid var(--line2);background:#121827;color:var(--txt);border-radius:12px;padding:10px 13px;font-weight:800;font-size:12px;cursor:pointer}.smallbtn.gold{background:var(--gold);color:#0b0d12;border-color:var(--gold)}.kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:13px;margin:18px 0}.kpi{background:linear-gradient(180deg,#171d2d,#121827);border:1px solid var(--line);border-radius:18px;padding:16px}.kpi span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;font-weight:900;letter-spacing:.7px}.kpi b{display:block;color:var(--gold);font-size:28px;line-height:1.15;margin-top:7px}.kpi small{color:var(--muted)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tab{border:1px solid var(--line);background:#111727;color:var(--muted);border-radius:999px;padding:9px 13px;cursor:pointer;font-weight:800;font-size:12px}.tab.on{border-color:var(--gold);color:#0b0d12;background:var(--gold)}.panel{display:none}.panel.on{display:block}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}.tablewrap{overflow:auto}.tbl{border-collapse:collapse;width:100%;min-width:900px}.tbl th{background:#233772;color:white;padding:9px 10px;text-align:center;font-size:11px;text-transform:uppercase;white-space:nowrap}.tbl td{border-bottom:1px solid var(--line);padding:8px 9px;text-align:center;white-space:nowrap;color:var(--txt)}.tbl td:first-child,.tbl th:first-child{text-align:left}.tbl tr:hover td{background:#171f32}.alert{border-left:4px solid var(--warn);background:rgba(245,158,11,.08);border-radius:12px;padding:12px;margin:9px 0;line-height:1.55}.alert.crit{border-color:var(--danger);background:rgba(239,68,68,.08)}.alert.info{border-color:var(--info);background:rgba(96,165,250,.08)}.log{white-space:pre-wrap;background:#080b11;border:1px solid var(--line);border-radius:14px;padding:14px;max-height:430px;overflow:auto;color:#b7c1e2;font-size:12px;line-height:1.65}.step{border:1px solid var(--line);border-radius:16px;padding:14px;background:#121827;margin-bottom:12px}.step h3{margin:0 0 8px;font-size:15px}.step ul{margin:8px 0 0 18px;color:var(--muted);line-height:1.65}.pre{white-space:pre-wrap;line-height:1.75;color:var(--txt)}.empty{height:62vh;display:grid;place-items:center;text-align:center;color:var(--muted)}.empty h1{color:var(--txt);font-size:34px;margin:0 0 8px}.fileline{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.6}@media(max-width:1250px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto}.agents{grid-template-columns:repeat(2,1fr)}.kpis{grid-template-columns:repeat(2,1fr)}.twocol{grid-template-columns:1fr}}@media(max-width:680px){.agents{grid-template-columns:1fr}.grid2,.grid3{grid-template-columns:1fr}.tools{width:100%}.smallbtn{flex:1}.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top"><div class="brand"><div class="logo">B</div><div><b>Orquestra Biasi</b><span>agentes reais · backend OpenAI</span></div></div><div class="status"><span id="dot" class="dot"></span><span id="status">Aguardando</span></div></header>
+<div class="layout">
+<aside>
+
+  <div class="card"><h2>00 · Configuração sem código</h2><div class="body">
+    <div id="configStatus" class="hint">Verificando configuração...</div>
+    <label>Chave OpenAI</label><input id="apiKey" type="password" placeholder="Cole sua nova chave aqui uma vez (sk-proj-...)" autocomplete="off">
+    <div class="grid2"><div><label>Modelo</label><select id="modelName"><option value="gpt-5.2">GPT-5.2 · recomendado</option><option value="gpt-5.2-pro">GPT-5.2 Pro · mais forte</option><option value="gpt-5.2-chat-latest">GPT-5.2 Chat · estilo ChatGPT</option><option value="gpt-5-mini">GPT-5 mini · mais barato</option><option value="gpt-4.1-mini">GPT-4.1 mini · legado</option></select></div><div><label>Modo</label><select id="mockMode"><option value="false">Agentes reais</option><option value="true">Demonstração</option></select></div></div>
+    <label>Raciocínio</label><select id="reasoningEffort"><option value="high">High · recomendado</option><option value="xhigh">XHigh · mais profundo</option><option value="medium">Medium</option><option value="low">Low</option><option value="none">None · mais rápido</option></select>
+    <button id="saveConfigBtn" class="btn secondary" type="button">Salvar configuração</button>
+    <div id="saveConfigMsg" class="hint" style="margin-top:8px">Você só precisa fazer isso uma vez. A chave fica salva localmente no seu computador, no arquivo .env.</div>
+  </div></div>
+  <div class="card"><h2>01 · Projeto</h2><div class="body">
+    <label>Cliente</label><input id="cliente" value="ABN Engenharia">
+    <label>Obra / projeto</label><input id="obra" value="Elétrica">
+    <div class="grid2"><div><label>Prazo</label><input id="prazo" type="number" value="4"></div><div><label>Unidade</label><select id="unidade"><option>meses</option><option>semanas</option></select></div></div>
+    <div class="grid3"><div><label>h/dia</label><input id="jornada" type="number" value="8"></div><div><label>dias/sem.</label><input id="dias" type="number" value="5"></div><div><label>efic.</label><input id="eficiencia" type="number" value="0.75" step="0.05"></div></div>
+    <label>Premissas internas</label><textarea id="premissas" placeholder="Só coisas internas que você sabe. O escopo vem dos anexos."></textarea>
+  </div></div>
+  <div class="card"><h2>02 · Anexos</h2><div class="body">
+    <div class="hint">Envie PDFs, DOCX, XLSX, CSV ou TXT do projeto. O ScopeReader vai levantar o escopo automaticamente.</div>
+    <label>Arquivos do projeto</label><input id="files" type="file" multiple onchange="showFiles()">
+    <div id="fileList" class="fileline">Nenhum arquivo selecionado.</div>
+    <label>Planilha de custos Biasi opcional</label><input id="costFile" type="file" accept=".xlsx,.xlsm,.xls">
+    <div id="uploadSizeHint" class="fileline">Tamanho total do upload: 0.00 MB.</div>
+    <div class="hint" style="margin-top:8px">Se não enviar, o sistema usa a base embutida extraída da planilha de custos que você forneceu.</div>
+    <button class="btn" id="run" onclick="runAgents()">Rodar agentes reais</button>
+    <button class="btn secondary" onclick="mockTip()">Dica modo teste</button>
+  </div></div>
+</aside>
+<main class="main">
+  <div class="hero"><div><h1 id="title">Resultado</h1><p id="subtitle">Anexe os arquivos e rode os agentes.</p></div><div class="tools"><button class="smallbtn" onclick="downloadJSON()">Baixar JSON</button><button class="smallbtn" onclick="downloadHistCSV()">CSV Histograma</button><button class="smallbtn" onclick="downloadEapCSV()">CSV EAP</button><button class="smallbtn gold" onclick="window.print()">PDF</button></div></div>
+  <div id="empty" class="empty"><div><h1>Agentes reais prontos</h1><p>O frontend envia anexos para o backend, o backend roda os agentes via OpenAI Agents SDK e devolve EAP, histograma, custo de MO e memória de cálculo.</p></div></div>
+  <div id="result" style="display:none">
+    <div class="agents" id="agents"></div>
+    <div class="kpis" id="kpis"></div>
+    <div class="tabs"><button class="tab on" onclick="tab(event,'dashboard')">Dashboard</button><button class="tab" onclick="tab(event,'eap')">EAP & %</button><button class="tab" onclick="tab(event,'hist')">Histograma</button><button class="tab" onclick="tab(event,'cost')">Custos MO</button><button class="tab" onclick="tab(event,'agentsTab')">Agentes</button><button class="tab" onclick="tab(event,'log')">Log</button></div>
+    <section id="dashboard" class="panel on"><div class="twocol"><div class="card"><h2>Resumo executivo</h2><div class="body"><div id="summary" class="pre"></div></div></div><div class="card"><h2>Alertas técnicos</h2><div class="body" id="alerts"></div></div></div></section>
+    <section id="eap" class="panel"><div class="card"><h2>EAP gerada pelos agentes</h2><div class="body tablewrap"><table id="eapTable" class="tbl"></table></div></div></section>
+    <section id="hist" class="panel"><div class="card"><h2>Histograma semanal por função</h2><div class="body tablewrap"><table id="histTable" class="tbl"></table></div></div></section>
+    <section id="cost" class="panel"><div class="twocol"><div class="card"><h2>Custo por função</h2><div class="body tablewrap"><table id="costTable" class="tbl"></table></div></div><div class="card"><h2>Memória de cálculo</h2><div class="body"><div id="memory" class="pre"></div></div></div></div></section>
+    <section id="agentsTab" class="panel"><div id="steps"></div></section>
+    <section id="log" class="panel"><div class="log" id="logBox"></div></section>
+  </div>
+</main>
+</div>
+<script>
+const meta={scope:['🧭','ScopeReader Biasi','Escopo'],eap:['🧩','EAPBuilder Biasi','EAP'],chrono:['📅','ChronoPlanner Biasi','Cronograma'],prod:['⚙️','ProdutivIA Biasi','Produtividade'],mobiliza:['👷','Mobiliza Biasi','Mobilização'],cost:['💰','CostCheck Biasi','Custos'],check:['🛡️','EngCheck Biasi','Validação'],narrator:['📝','PropostaNarrator Biasi','Resumo']};
+let done={}, active=null, state=null;
+
+let SETTINGS={has_api_key:false,hosted_mode:false,use_mock_agents:false,openai_model:'gpt-5.2',reasoning_effort:'high'};
+async function loadSettings(){
+  try{
+    const r=await fetch('/api/settings'); SETTINGS=await r.json();
+    document.getElementById('modelName').value=SETTINGS.openai_model||'gpt-5.2';
+    document.getElementById('reasoningEffort').value=SETTINGS.reasoning_effort||'high';
+    document.getElementById('mockMode').value=String(!!SETTINGS.use_mock_agents);
+    renderSettings();
+  }catch(e){document.getElementById('configStatus').textContent='Não consegui verificar a configuração.'}
+}
+function renderSettings(){
+  const el=document.getElementById('configStatus');
+  const keyInput=document.getElementById('apiKey');
+  const btn=document.getElementById('saveConfigBtn');
+  const msg=document.getElementById('saveConfigMsg');
+  if(SETTINGS.hosted_mode){
+    keyInput.disabled=true; keyInput.placeholder='Chave configurada no servidor/ambiente hospedado';
+    btn.style.display='none';
+    msg.textContent='Modo hospedado: a chave OpenAI deve ficar nas variáveis de ambiente do servidor, não no navegador.';
+  }
+  if(SETTINGS.use_mock_agents) el.innerHTML='🟡 Modo demonstração ativo. Não chama a OpenAI.';
+  else if(SETTINGS.has_api_key) el.innerHTML='🟢 Agentes reais configurados no servidor. Pode rodar.';
+  else el.innerHTML=SETTINGS.hosted_mode?'🔴 HOSTED_MODE ativo, mas OPENAI_API_KEY não foi configurada no servidor.':'🔴 Cole sua chave OpenAI e clique em Salvar configuração para rodar agentes reais.';
+}
+async function saveSettings(){
+  if(SETTINGS.hosted_mode){alert('Modo hospedado: configure OPENAI_API_KEY nas variáveis de ambiente do servidor.');return}
+  const btn=document.getElementById('saveConfigBtn');
+  const msg=document.getElementById('saveConfigMsg');
+  const key=document.getElementById('apiKey').value.trim();
+  const payload={
+    openai_api_key:key,
+    openai_model:document.getElementById('modelName').value || 'gpt-5.2',
+    reasoning_effort:document.getElementById('reasoningEffort').value || 'high',
+    use_mock_agents:document.getElementById('mockMode').value==='true'
+  };
+  if(!payload.use_mock_agents && !payload.openai_api_key && !SETTINGS.has_api_key){alert('Cole uma chave OpenAI ou selecione Modo demonstração.');return}
+  try{
+    btn.disabled=true; btn.textContent='Salvando...'; msg.textContent='Salvando configuração local...';
+    const r=await fetch('/api/settings',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    const data=await r.json().catch(()=>({}));
+    if(!r.ok) throw new Error(data.detail || data.message || ('HTTP '+r.status));
+    SETTINGS=data; document.getElementById('apiKey').value=''; renderSettings();
+    msg.textContent='Configuração salva. Agora você pode rodar os agentes.';
+  }catch(e){
+    msg.textContent='Erro ao salvar: '+e.message;
+    alert('Erro ao salvar configuração: '+e.message);
+  }finally{
+    btn.disabled=false; btn.textContent='Salvar configuração';
+  }
+}
+function setStatus(t,live=false){document.getElementById('status').textContent=t;document.getElementById('dot').className='dot'+(live?' live':'')}
+function renderAgents(){document.getElementById('agents').innerHTML=Object.entries(meta).map(([id,m])=>`<div class="agent ${active===id?'run':''} ${done[id]?'done':''}"><div class="face">${m[0]}</div><h3>${m[1]}</h3><p>${m[2]}</p><span class="badge">${active===id?'executando':done[id]?'concluído':'aguardando'}</span></div>`).join('')}
+renderAgents();
+loadSettings();
+document.getElementById('saveConfigBtn').addEventListener('click', saveSettings);
+function totalUploadBytes(){let total=0; for(const f of document.getElementById('files').files) total += f.size || 0; const cf=document.getElementById('costFile').files[0]; if(cf) total += cf.size || 0; return total}
+function renderUploadSize(){const totalMb=totalUploadBytes()/1024/1024; let msg=`Tamanho total do upload: ${totalMb.toFixed(2)} MB.`; if(totalMb>4.2) msg+=' Muito provavelmente a Vercel vai recusar esse envio.'; else if(totalMb>3.8) msg+=' VocÃª estÃ¡ perto do limite prÃ¡tico da Vercel.'; document.getElementById('uploadSizeHint').textContent=msg}
+document.getElementById('costFile').addEventListener('change', renderUploadSize);
+function showFiles(){const fs=[...document.getElementById('files').files];document.getElementById('fileList').textContent=fs.length?fs.map(f=>f.name).join('\n'):'Nenhum arquivo selecionado.';renderUploadSize()}
+function log(t){const el=document.getElementById('logBox');el.textContent += t+'\n';el.scrollTop=999999}
+function mockTip(){alert('Use o bloco 00 · Configuração: escolha Demonstração para testar sem API, ou Agentes reais e cole sua chave OpenAI.')} 
+async function runAgents(){
+  if(!SETTINGS.use_mock_agents && !SETTINGS.has_api_key){alert('Configure sua chave OpenAI no bloco 00 antes de rodar agentes reais.');return}
+  const totalMb=totalUploadBytes()/1024/1024;
+  if(totalMb>4.2){alert(`Upload muito grande para a Vercel (${totalMb.toFixed(2)} MB). Remova arquivos ou retire a planilha de custos.`);return}
+  state=null; done={}; active='scope'; renderAgents(); document.getElementById('empty').style.display='none'; document.getElementById('result').style.display='block'; document.getElementById('logBox').textContent='';
+  document.getElementById('run').disabled=true; setStatus('Preparando documentos...',true); log('Iniciando execução...');
+  const fd=new FormData();
+  ['cliente','obra','prazo','unidade','jornada','dias','eficiencia','premissas'].forEach(id=>{});
+  fd.append('cliente',val('cliente')); fd.append('obra',val('obra')); fd.append('prazo',val('prazo')); fd.append('unidade',val('unidade')); fd.append('jornada_h_dia',val('jornada')); fd.append('dias_semana',val('dias')); fd.append('eficiencia',val('eficiencia')); fd.append('premissas_internas',val('premissas'));
+  for(const f of document.getElementById('files').files) fd.append('files',f);
+  const cf=document.getElementById('costFile').files[0]; if(cf) fd.append('cost_file',cf);
+  try{
+    const res=await fetch('/api/runs/stream',{method:'POST',body:fd});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const reader=res.body.getReader(); const dec=new TextDecoder(); let buf='';
+    while(true){const {done:sd,value}=await reader.read(); if(sd) break; buf+=dec.decode(value,{stream:true}); const lines=buf.split('\n'); buf=lines.pop(); for(const line of lines){if(line.trim()){try{handle(JSON.parse(line));}catch(parseErr){log('Linha não interpretada: '+line.slice(0,300));}}}}
+    if(!state){setStatus('Execução terminou sem resultado final',false); log('ATENÇÃO: o servidor terminou, mas não enviou resultado final. Veja mensagens acima.');}
+  }catch(e){log('ERRO: '+e.message); alert(e.message==='HTTP 413'?'A Vercel recusou o upload por tamanho. Tente sem a planilha de custos ou com menos arquivos.':'Erro: '+e.message); setStatus('Erro',false)}
+  document.getElementById('run').disabled=false;
+}
+function val(id){return document.getElementById(id).value}
+function handle(ev){
+  if(ev.type==='status'){log('STATUS: '+ev.message); setStatus(ev.message,true); if(!active && !Object.keys(done).length){active='scope'; renderAgents();} return}
+  if(ev.type==='agent_start'){active=ev.agent_id; renderAgents(); log('▶ '+ev.agent_name+' iniciou'); return}
+  if(ev.type==='agent_end'){done[ev.step.agent_id]=true; active=null; renderAgents(); log('✓ '+ev.step.agent_name+': '+ev.step.summary); return}
+  if(ev.type==='error'){active=null; renderAgents(); log('ERRO: '+ev.message); alert(ev.message); setStatus('Erro',false); return}
+  if(ev.type==='final'){state=ev.result; renderFinal(); log('FINAL: execução concluída.'); setStatus('Concluído',false); return}
+}
+function renderFinal(){
+  const s=state; const p=s.project||{}; document.getElementById('title').textContent=(p.cliente||'')+' · '+(p.obra||''); document.getElementById('subtitle').textContent=`${p.prazo} ${p.unidade} · ${p.jornada_h_dia}h/dia · ${p.dias_semana} dias/semana`;
+  const e=s.eap||{}, m=s.mobilizacao||{}, c=s.custos||{}, r=s.resumo||{}, v=s.validacao||{};
+  document.getElementById('kpis').innerHTML=`<div class="kpi"><span>MO total</span><b>${brl(c.total_mo||0)}</b><small>soma semanal</small></div><div class="kpi"><span>Total HH</span><b>${num(e.total_hh||0)}</b><small>EAP</small></div><div class="kpi"><span>Pico equipe</span><b>${m.pico_total||0}</b><small>S${m.semana_pico||'-'}</small></div><div class="kpi"><span>Equipe média</span><b>${m.equipe_media||0}</b><small>pessoas</small></div><div class="kpi"><span>Funções</span><b>${(m.funcoes||[]).length}</b><small>MO direta/indireta</small></div>`;
+  document.getElementById('summary').textContent=(r.paragrafo_mobilizacao||'')+'\n\n'+(r.texto_memoria_calculo||'');
+  document.getElementById('alerts').innerHTML=(v.alertas||[]).map(a=>`<div class="alert ${a.severidade==='critico'?'crit':a.severidade==='informativo'?'info':''}"><b>${a.severidade||''}</b> · ${a.tema||''}<br>${a.descricao||''}<br><small>${a.recomendacao||''}</small></div>`).join('') || '<div class="alert info">Sem alertas registrados.</div>';
+  renderEap(); renderHist(); renderCost(); renderSteps();
+}
+function renderEap(){const rows=(state.eap||{}).eap||[]; const h=['etapa','subetapa','percent_etapa','percent_total','hh_estimado','criterio','confianca']; table('eapTable',h,rows)}
+function renderHist(){const rows=(state.mobilizacao||{}).weekly_histogram||[]; const funcs=(state.mobilizacao||{}).funcoes||[]; const weekly=((state.custos||{}).weekly_costs||[]).reduce((a,x)=>{a[x.semana]=x.custo_mo;return a},{}); const headers=['semana',...funcs,'direta_total','indireta_total','total','custo_mo']; const data=rows.map(r=>{const o={semana:'S'+r.semana,direta_total:r.direta_total,indireta_total:r.indireta_total,total:r.total,custo_mo:brl(weekly[r.semana]||0)}; funcs.forEach(f=>o[f]=(r.funcoes||{})[f]||0); return o}); table('histTable',headers,data)}
+function renderCost(){const by=(state.custos||{}).by_role||{}; const rows=Object.entries(by).map(([funcao,total])=>({funcao,total:brl(total)})); table('costTable',['funcao','total'],rows); const c=state.custos||{}; document.getElementById('memory').textContent=`MO total = ${brl(c.total_mo||0)}\n\nFórmula por função/semana:\n${c.cost_formula||''}\n\nFunções sem custo encontrado:\n${(c.missing_roles||[]).join(', ') || 'nenhuma'}`}
+function renderSteps(){document.getElementById('steps').innerHTML=(state.steps||[]).map(st=>`<div class="step"><h3>${meta[st.agent_id]?.[0]||''} ${st.agent_name}</h3><p>${st.summary||''}</p><ul>${(st.details||[]).map(d=>`<li>${esc(d)}</li>`).join('')}</ul><p style="color:var(--muted)">${(st.evidence||[]).slice(0,6).map(esc).join('<br>')}</p></div>`).join('')}
+function table(id,headers,rows){document.getElementById(id).innerHTML='<thead><tr>'+headers.map(h=>`<th>${esc(h)}</th>`).join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+headers.map(h=>`<td>${esc(r[h]??'')}</td>`).join('')+'</tr>').join('')+'</tbody>'}
+function tab(ev,id){document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));ev.target.classList.add('on');document.querySelectorAll('.panel').forEach(x=>x.classList.remove('on'));document.getElementById(id).classList.add('on')}
+function brl(n){return Number(n||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} function num(n){return Number(n||0).toLocaleString('pt-BR')} function esc(s){return String(s).replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]))}
+function downloadJSON(){if(!state)return;dl('orquestra_biasi_resultado.json',JSON.stringify(state,null,2),'application/json')}
+function downloadHistCSV(){if(!state)return;const rows=(state.mobilizacao||{}).weekly_histogram||[];const funcs=(state.mobilizacao||{}).funcoes||[];const headers=['semana',...funcs,'direta_total','indireta_total','total'];const csv=[headers.join(';')].concat(rows.map(r=>headers.map(h=>h==='semana'?'S'+r.semana:(r.funcoes?.[h]??r[h]??'')).join(';'))).join('\n');dl('histograma_biasi.csv',csv,'text/csv')}
+function downloadEapCSV(){if(!state)return;const rows=(state.eap||{}).eap||[];const headers=['etapa','subetapa','percent_etapa','percent_total','hh_estimado','criterio','confianca'];const csv=[headers.join(';')].concat(rows.map(r=>headers.map(h=>String(r[h]??'').replace(/;/g,',')).join(';'))).join('\n');dl('eap_biasi.csv',csv,'text/csv')}
+function dl(name,content,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([content],{type}));a.download=name;a.click();URL.revokeObjectURL(a.href)}
+</script>
+</body>
+</html>

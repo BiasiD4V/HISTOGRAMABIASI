@@ -1,0 +1,19 @@
+ORQUESTRA BIASI - COMO ABRIR SEM PROGRAMACAO
+
+1. Extraia este ZIP em uma pasta do computador.
+2. De dois cliques em INICIAR_APP_WINDOWS.bat.
+3. Se aparecer mensagem de Python nao encontrado, de dois cliques em INSTALAR_PYTHON_E_INICIAR_WINDOWS.bat.
+4. Aguarde. Na primeira vez ele instala dependencias e pode demorar alguns minutos.
+5. O navegador deve abrir em http://127.0.0.1:8000.
+
+CHAVE DA OPENAI
+- A chave deve ser uma OpenAI API Key criada no site da OpenAI Platform.
+- Ela normalmente comeca com sk- ou sk-proj-.
+- Nao use sua senha do ChatGPT.
+- Nao compartilhe essa chave com outras pessoas.
+
+No app:
+1. Abra a area 00 - Configuracao sem codigo.
+2. Cole a chave no campo da OpenAI.
+3. Salve.
+4. Se quiser testar sem gastar API, use o modo Demonstracao/Mock.

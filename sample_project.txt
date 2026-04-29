@@ -1,0 +1,4 @@
+Projeto: Adequação elétrica e SPDA em unidade industrial.
+Escopo: montagem de infraestrutura elétrica, lançamento de cabos, instalação de painéis, interligações, adequação de SPDA, aterramento, testes elétricos, as built e data book.
+Quantitativos preliminares: 1800 m de cabos, 650 m de eletrocalha/eletroduto, 4 painéis, 38 pontos de SPDA.
+Premissas: áreas técnicas liberadas até a semana 2, materiais críticos disponíveis antes da montagem, integração obrigatória e apoio da operação para testes finais.
